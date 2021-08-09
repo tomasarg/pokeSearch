@@ -15,6 +15,7 @@ The purpose of this document is to explain how an Algolia Search can be easily i
 
 ## Algolia functionality
 Decided to use [Algolia's JS SDK](https://www.algolia.com/doc/api-client/getting-started/install/javascript/?client=javascript) functionality. While there are other options that will be easier to implement they have limitations regarding functionality and style. I already had a runnning website with Svelte so I decided to just integrate the JS SDK, in some other scenarios it might be a better option to use the [Instant Search Widget](https://community.algolia.com/#instantsearch) "Right tool for each job"
+
 ![Right tool](https://media.giphy.com/media/l1Kum52Ai1QUFmMN2/giphy.gif)
 
 ## Prerequisite to understand and run the project
