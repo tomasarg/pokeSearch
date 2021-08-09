@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>About</title>
+
+		
+
+		<link rel="modulepreload" href="/pokesearch/_app/start-817503fb.js">
+		<link rel="modulepreload" href="/pokesearch/_app/chunks/vendor-d7faccf7.js">
+		<link rel="modulepreload" href="/pokesearch/_app/pages/__layout.svelte-5ac063c4.js">
+		<link rel="modulepreload" href="/pokesearch/_app/pages/about.svelte-99051284.js">
+		<link rel="stylesheet" href="/pokesearch/_app/assets/start-8077b9bf.css">
+		<link rel="stylesheet" href="/pokesearch/_app/assets/pages/__layout.svelte-681056b6.css">
+
+		<script type="module">
+			import { start } from "/pokesearch/_app/start-817503fb.js";
+			start({
+				target: document.body,
+				paths: {"base":"/pokesearch","assets":"/pokesearch"},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/pokesearch/_app/pages/__layout.svelte-5ac063c4.js"),
+						import("/pokesearch/_app/pages/about.svelte-99051284.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/about",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="flex justify-center w-full"><a class="mx-4 text-large" href="/">Home</a>
+	<a class="mx-4 text-large" href="/about">About</a></nav>
+<div class="p-8 max-w-6xl mx-auto">
+
+<h1 class="text-4xl text-center my-8 uppercase">About page</h1>
+</div>
+
+
+
+	
+</div>
+	</body>
+</html>
