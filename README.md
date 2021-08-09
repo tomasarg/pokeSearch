@@ -32,12 +32,12 @@ Decided to use [Algolia's JS SDK](https://www.algolia.com/doc/api-client/getting
 1. Execute	`npm install`
 2. Insert your **Algolia's Keys** in 
 3. Replace Algolia's keys
-	3.1	Navigate to `/src/config/`
-    3.2 Rename the file `/src/config/config_sample.js/` to `/src/config/config.js/`
-	3.2	Replace the value of *client_id* located in the file `/src/config/config.js/` for the one provided by your Algolia's account
-	3.4	Replace the value of *apiKey* located in the file `/src/config/config.js/` for the one provided by your Algolia's account
-5. Run the app
-	5.1 I am using Svelte to compile and run the app.
+	3.1. Navigate to `/src/config/`
+	3.2. Rename the file `/src/config/config_sample.js/` to `/src/config/config.js/`
+	3.3. Replace the value of *client_id* located in the file `/src/config/config.js/` for the one provided by your Algolia's account
+	3.4. Replace the value of *apiKey* located in the file `/src/config/config.js/` for the one provided by your Algolia's account
+4. Run the app
+	4.1. I am using Svelte to compile and run the app.
 	Using a command-line terminal navigate to the folder hosting the app and execute `npm run dev`. You will need to leave that terminal window open in order to keep the server running. By default this will be running at `https://localhost:3000`
 	
 The project is already setup to be running on the mentioned port. This can be changed in the config files
