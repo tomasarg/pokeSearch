@@ -30,13 +30,12 @@ Decided to use [Algolia's JS SDK](https://www.algolia.com/doc/api-client/getting
 ## Getting the project ready to run
 
 1. Execute	`npm install`
-2. Insert your **Algolia's Keys** in 
-3. Replace Algolia's keys
+2. Replace Algolia's keys
 	1. Navigate to `/src/config/`
 	2. Rename the file `/src/config/config_sample.js/` to `/src/config/config.js/`
 	3. Replace the value of *client_id* located in the file `/src/config/config.js/` for the one provided by your Algolia's account
 	4. Replace the value of *apiKey* located in the file `/src/config/config.js/` for the one provided by your Algolia's account
-4. Run the app
+3. Run the app
 	1. I am using Svelte to compile and run the app.
 	Using a command-line terminal navigate to the folder hosting the app and execute `npm run dev`. You will need to leave that terminal window open in order to keep the server running. By default this will be running at `https://localhost:3000`
 	
@@ -44,11 +43,11 @@ The project is already setup to be running on the mentioned port. This can be ch
 
 ## How does it work?
 
-The user will land in the home page which will present all the available (OG pokemons only). This page also offers a search field (search as you type). This is a dynamic field; each time the user types a letter it will hit **Algolia's Search API** via the JS SDK and perform a search on the `pokemon` index that was created initially 
+The user will land in the home page which will present all the available (OG pokemons only). This page also offers a search field (search as you type). This is a dynamic field; each time the user types a letter it will hit **Algolia's Search API** via the JS SDK and perform a search on the `pokemon` index that was created initially. The index has a searchable attribute on the `name` field and its sorted ascending.
 
 That is it, quite simple implementation. 
 
-If you click on a specific pokemon you will be presented with details of that pokemon. This is fetching data directly from `pokeapi.co`. All the stats and details of the OG 150 Pokemon are also indexed in Algolia but we are not performing search against that data in this POC
+If you click on a specific pokemon you will be presented with details/stats of that pokemon. This is fetching data directly from `pokeapi.co`. All the stats and details of the OG 150 Pokemon are also indexed in Algolia. We could decide what stats are searchable and potentially even add a custom ranking. However, for this demo the stats are coming directly from the pokeapi.
 
 A detailed sequence diagram of the operation can be found next
 
