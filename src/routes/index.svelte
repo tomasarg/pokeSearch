@@ -1,5 +1,4 @@
 <script>
-import config from "../config/config.js"
 import PokemanCard from "../components/pokemanCard.svelte";
 import {pokemon, fetchPokemon} from "../stores/pokestore";
 let searchTerm = '';
@@ -24,4 +23,3 @@ $: {
 		<PokemanCard {pokeman} />
 	{/each}
 </div>
-{config.algolia.client_id}

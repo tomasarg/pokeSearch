@@ -1,8 +1,10 @@
+import config from "../config/config.js"
 import { writable } from 'svelte/store';
 
 //Import algolia client 'lite' version (search only)
 import algoliasearch from 'algoliasearch';
-const client = algoliasearch('TM6R82PC2M', 'df95ebaff994eda3d92c4fa90ca8b371');
+//const client = algoliasearch('TM6R82PC2M', 'df95ebaff994eda3d92c4fa90ca8b371');
+const client = algoliasearch(config.algolia.client_id, config.algolia.apiKey);
 
 export const pokemon = writable([]);
 const pokemonDetails = {};
